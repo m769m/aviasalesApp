@@ -1,0 +1,36 @@
+.app {
+  margin: 0 auto;
+
+  &-container {
+    min-height: 100vh;
+    max-width: 960px;
+    width: 100%;
+  
+    background-color: #f3f7fa;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &__logo-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+    &-position {
+      margin-bottom: 31px;
+    }
+  }
+
+  &__main {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+  }
+}

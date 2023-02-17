@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+  list-style: none;
+
+  margin: 0;
+  
+  padding: 0;
+}
+
+input[type='checkbox'], input[type='radio'] {
+  position: absolute;
+
+  visibility: hidden;
+
+  height: 0px;
+  width: 0px;
+}
