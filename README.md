@@ -1,4 +1,4 @@
-link: https://movies-app-m769m.vercel.app/
+link: https://aviasales-app-m769m.vercel.app/
 
 start husky:  
   1)git init  
