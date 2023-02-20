@@ -2,7 +2,7 @@ import { useSelector, useDispatch } from "react-redux/es/exports";
 
 import { setIsPressBtn, setSorting } from "../../store/slices/filtersSlice";
 
-import classes from "./sorting.module.scss";
+import classes from "./Sorting.module.scss";
 
 const Sorting = () => {
   const dispatch = useDispatch();
