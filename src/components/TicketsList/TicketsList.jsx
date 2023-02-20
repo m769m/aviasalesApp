@@ -52,7 +52,6 @@ const TicketsList = () => {
     if (dataActive.length === 4) {
       newDataTickets = [...dataTickets];
     } else {
-      console.log(dataActive.length, dataActive, dataActive.includes("Без пересадок"));
       if (dataActive.includes("Без пересадок")) {
         const filterData = dataTickets.filter((el) => {
           return el.segments[0].stops.length === 0 && el.segments[1].stops.length === 0;
