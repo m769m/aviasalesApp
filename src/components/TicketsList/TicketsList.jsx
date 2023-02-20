@@ -52,36 +52,37 @@ const TicketsList = () => {
     if (dataActive.length === 4) {
       newDataTickets = [...dataTickets];
     } else {
+      console.log(dataActive.length, dataActive, dataActive.includes("Без пересадок"));
       if (dataActive.includes("Без пересадок")) {
-        newDataTickets.concat(
-          dataTickets.filter((el) => {
-            return el.segments[0].stops.length === 0 && el.segments[1].stops.length === 0;
-          }),
-        );
+        const filterData = dataTickets.filter((el) => {
+          return el.segments[0].stops.length === 0 && el.segments[1].stops.length === 0;
+        });
+
+        newDataTickets = [...newDataTickets, ...filterData];
       }
 
       if (dataActive.includes("1 пересадка")) {
-        newDataTickets.concat(
-          dataTickets.filter((el) => {
-            return el.segments[0].stops.length === 1 && el.segments[1].stops.length === 1;
-          }),
-        );
+        const filterData = dataTickets.filter((el) => {
+          return el.segments[0].stops.length === 1 && el.segments[1].stops.length === 1;
+        });
+
+        newDataTickets = [...newDataTickets, ...filterData];
       }
 
       if (dataActive.includes("2 пересадки")) {
-        newDataTickets.concat(
-          dataTickets.filter((el) => {
-            return el.segments[0].stops.length === 2 && el.segments[1].stops.length === 2;
-          }),
-        );
+        const filterData = dataTickets.filter((el) => {
+          return el.segments[0].stops.length === 2 && el.segments[1].stops.length === 2;
+        });
+
+        newDataTickets = [...newDataTickets, ...filterData];
       }
 
       if (dataActive.includes("3 пересадки")) {
-        newDataTickets.concat(
-          dataTickets.filter((el) => {
-            return el.segments[0].stops.length === 3 && el.segments[1].stops.length === 3;
-          }),
-        );
+        const filterData = dataTickets.filter((el) => {
+          return el.segments[0].stops.length === 3 && el.segments[1].stops.length === 3;
+        });
+
+        newDataTickets = [...newDataTickets, ...filterData];
       }
     }
 

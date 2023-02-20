@@ -7,7 +7,7 @@ import { setSearchId } from "../../store/slices/cardSlice";
 import fetchTickets from "../../store/slices/ActionAsyncCreater";
 import logo from "../../assets/images/Logo.svg";
 import Filter from "../Filters/Filters";
-import Sorting from "../Sorting/sorting";
+import Sorting from "../Sorting/Sorting";
 import TicketsList from "../TicketsList/TicketsList";
 
 import classes from "./App.module.scss";
